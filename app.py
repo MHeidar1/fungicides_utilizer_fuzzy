@@ -15,7 +15,7 @@ import json
 app = Flask(__name__)
 
 
-@app.route('/land/', methods=['GET'])
+@app.route('/land', methods=['GET'])
 def wheat_rust():
     stationData = request.args.to_dict()
     day0 = str(date.today())
