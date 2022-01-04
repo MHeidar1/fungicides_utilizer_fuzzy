@@ -14,7 +14,7 @@ import json
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def test():
     return "hello world"
 
