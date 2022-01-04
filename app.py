@@ -14,6 +14,10 @@ import json
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def test():
+    return "hello world"
+
 
 @app.route('/land', methods=['GET'])
 def wheat_rust():
